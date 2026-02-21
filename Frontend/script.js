@@ -206,3 +206,34 @@ document.querySelectorAll('.skill-tag').forEach(tag => {
     tag.style.color = '';
   });
 });
+
+// ── Projects Carousel Auto-Slide ──
+const projectsCarousel = document.getElementById('projects-carousel');
+if (projectsCarousel) {
+  let isDown = false;
+  let autoSlideInterval;
+
+  const startAutoSlide = () => {
+    autoSlideInterval = setInterval(() => {
+      if (!isDown) {
+        const itemWidth = projectsCarousel.querySelector('.project-card').offsetWidth + 30; // 30 is the gap
+        if (projectsCarousel.scrollLeft + projectsCarousel.clientWidth >= projectsCarousel.scrollWidth - 10) {
+          projectsCarousel.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+          projectsCarousel.scrollBy({ left: itemWidth, behavior: 'smooth' });
+        }
+      }
+    }, 3000); // Change slide every 3 seconds
+  };
+
+  const stopAutoSlide = () => clearInterval(autoSlideInterval);
+
+  projectsCarousel.addEventListener('mouseenter', stopAutoSlide);
+  projectsCarousel.addEventListener('mouseleave', startAutoSlide);
+
+  // Touch support resets
+  projectsCarousel.addEventListener('touchstart', stopAutoSlide, { passive: true });
+  projectsCarousel.addEventListener('touchend', startAutoSlide);
+
+  startAutoSlide();
+}
