@@ -1585,11 +1585,18 @@ footer {
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
-  padding-bottom: 20px;
+  padding: 5px 30px 30px 5px;
+  /* Fixes right-side flexbox clipping & shadows */
 }
 
 .projects-carousel::-webkit-scrollbar {
   display: none;
+}
+
+.projects-carousel::after {
+  content: '';
+  flex: 0 0 5px;
+  /* Bulletproof spacer against the right scroll edge */
 }
 
 .project-card {
@@ -1605,6 +1612,8 @@ footer {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  margin-right: 2px;
+  /* tiny boost so right edge border doesn't snap flat against scroll edges */
 }
 
 .project-card:hover {
