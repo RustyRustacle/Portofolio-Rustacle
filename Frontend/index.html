@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abraham Rusty Djajani – Web3 & AI Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Abraham Rusty Djajani – Web3 Ecosystem Builder, AI & Blockchain Strategist, Startup Founder, MetaMask Country Lead Indonesia." />
+  <meta property="og:title" content="Abraham Rusty Djajani – Web3 & AI Portfolio" />
+  <meta property="og:description" content="Web3 Ecosystem Builder · AI & Blockchain Strategist · Startup Founder" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✅</text></svg>" />
+</head>
+
+<body>
+
+  <!-- Canvas bubbles -->
+  <canvas id="bg-canvas"></canvas>
+  <!-- Rainbow overlay -->
+  <div class="rainbow-overlay"></div>
+
+  <!-- ══════════════════════════════
+     NAVIGATION
+══════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a class="nav-logo" href="#hero">
+      <span class="nav-logo-badge">✓</span>
+      RUSTY<span class="dot">.</span>DEV
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk ✦</a></li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <!-- Blob decorations -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+
+      <div class="hero-inner">
+
+        <!-- ── Text ── -->
+        <div class="hero-text">
+          <div class="hero-tag">
+            <span class="dot"></span>
+            Open to Collaboration
+          </div>
+
+          <h1 class="hero-name">
+            <span class="name-blue">ABRAHAM</span><br>
+            <span class="name-yellow">RUSTY</span>
+          </h1>
+
+          <p class="hero-alias">
+            <span class="verified-badge-inline">✓</span>
+            @rustacle &nbsp;·&nbsp; <span id="typed-text">Web3 Ecosystem Builder</span><span
+              style="color:var(--yellow);font-weight:900;">|</span>
+          </p>
+
+          <p class="hero-headline">
+            Second-year <strong>AI & IT student</strong> at Tarumanagara University.
+            Former CEO of tech startup <strong>Tribez</strong>.
+            Now building on <strong>Web3</strong> as <strong>MetaMask Country Lead Indonesia</strong>.
+          </p>
+
+          <div class="hero-badges">
+            <span class="badge badge-yellow">🦊 MetaMask Country Lead</span>
+            <span class="badge badge-blue">⟠ Ethereum Jakarta</span>
+            <span class="badge badge-pink">🌐 Web3 Builder</span>
+            <span class="badge badge-lavender">🤖 AI Developer</span>
+            <span class="badge badge-mint">🚀 Startup Founder</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.02 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
+              </svg>
+              Connect With Me
+            </a>
+            <a href="#experience" class="btn-secondary">
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+              </svg>
+              View Experience
+            </a>
+          </div>
+        </div>
+
+        <!-- ── Profile Visual ── -->
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+
+            <!-- Decorative spinning rings -->
+            <div class="deco-ring deco-ring-1"></div>
+            <div class="deco-ring deco-ring-2"></div>
+
+            <!-- Floating sticker emoji -->
+            <span class="sticker sticker-1">✅</span>
+            <span class="sticker sticker-2">🦊</span>
+            <span class="sticker sticker-3">⛓️</span>
+            <span class="sticker sticker-4">🎓</span>
+
+            <div class="profile-card">
+
+              <!-- Main avatar image -->
+              <div class="profile-img-frame">
+                <div class="profile-img-bg"></div>
+                <img src="profile.png" alt="Abraham Rusty Djajani – cartoon avatar" class="profile-img"
+                  id="profile-img" />
+              </div>
+
+              <!-- Info card below image -->
+              <div class="profile-info-card">
+                <div class="profile-name-row">
+                  <span class="profile-name-text">Abraham Rusty Djajani</span>
+                  <span class="verified-pill">
+                    <span class="verified-icon">✓</span> Verified
+                  </span>
+                </div>
+                <div class="profile-stats">
+                  <div class="stat">
+                    <span class="stat-num">3.5</span>
+                    <span class="stat-label">GPA</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-num">5+</span>
+                    <span class="stat-label">Roles</span>
+                  </div>
+                  <div class="stat">
+                    <span class="stat-num">7+</span>
+                    <span class="stat-label">Awards</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+    <div class="about-wrapper">
+      <section id="about" aria-label="About">
+        <div class="section-header">
+          <div class="section-label">✦ 01 — ABOUT</div>
+          <h2 class="section-title">Who Is <span class="accent">Rusty?</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-sub">Builder at the crossroads of AI, Web3, and product strategy — based in Jakarta.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a <strong>second-year Information Technology student</strong> majoring in Artificial Intelligence
+              at Tarumanagara University — with hands-on experience across Web3 ecosystem development,
+              digital platform operations, and cross-border community leadership.
+            </p>
+            <p>
+              As <strong>Former CEO of Tribez</strong>, I led a technology-driven startup focused on
+              automation, AI integration, and scalable digital solutions for MSMEs. I've since channeled
+              that energy into growing crypto ecosystems as <strong>MetaMask Country Lead Indonesia</strong>
+              and <strong>Community Manager at Ethereum Jakarta</strong>.
+            </p>
+            <p>
+              My research focus centers on <strong>Intelligent NFTs (iNFT)</strong> — exploring the
+              convergence of AI-driven systems and decentralized blockchain infrastructure.
+            </p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon yellow">🦊</div>
+              <div>
+                <div class="highlight-title">MetaMask Country Lead – Indonesia</div>
+                <div class="highlight-desc">Growing Web3 adoption across universities and developer communities
+                  nationwide.</div>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon blue">⟠</div>
+              <div>
+                <div class="highlight-title">Ethereum Jakarta Community Manager</div>
+                <div class="highlight-desc">Managing multi-campus Student Ambassador Program & blockchain partnerships.
+                </div>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon pink">🤖</div>
+              <div>
+                <div class="highlight-title">AI Research — Intelligent NFT (iNFT)</div>
+                <div class="highlight-desc">Undergraduate research at the intersection of AI systems and decentralized
+                  tech.</div>
+              </div>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon mint">🏆</div>
+              <div>
+                <div class="highlight-title">2nd Global Winner – Startup Hackathon</div>
+                <div class="highlight-desc">Competed vs teams from India, China, Thailand, Vietnam & USA.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ══════════════════════════════
+     EXPERIENCE
+══════════════════════════════ -->
+    <div class="experience-section" id="experience" aria-label="Experience">
+      <div class="experience-inner">
+        <div class="section-header">
+          <div class="section-label">✦ 02 — EXPERIENCE</div>
+          <h2 class="section-title">Professional <span class="accent">Journey</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-sub">From restaurant ops to MetaMask — a diverse path driven by impact.</p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- MetaMask -->
+          <div class="timeline-item">
+            <div class="timeline-dot"
+              style="border-color:#F5A0C0;box-shadow:0 0 0 4px rgba(245,160,192,0.2),0 0 14px rgba(245,160,192,0.4)">
+            </div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div>
+                  <div class="exp-company">🦊 MetaMask</div>
+                  <div class="exp-role">Country Lead, Indonesia (Contract)</div>
+                  <div class="exp-location">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Remote
+                  </div>
+                </div>
+                <span class="exp-period">Dec 2025 – Present</span>
+              </div>
+              <ul class="exp-list">
+                <li>Built strategic relationships with Web3 communities, developers, universities, and ecosystem
+                  partners across Indonesia.</li>
+                <li>Organized educational workshops and ecosystem events to drive MetaMask adoption and Web3 literacy.
+                </li>
+                <li>Coordinated with regional and global MetaMask teams to align local initiatives with broader
+                  strategic objectives.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Ethereum Jakarta -->
+          <div class="timeline-item">
+            <div class="timeline-dot"
+              style="border-color:var(--lavender);box-shadow:0 0 0 4px var(--lavender-dim),0 0 14px rgba(196,168,232,0.4)">
+            </div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div>
+                  <div class="exp-company">⟠ Ethereum Jakarta</div>
+                  <div class="exp-role">Community Manager</div>
+                  <div class="exp-location">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Hybrid
+                  </div>
+                </div>
+                <span class="exp-period">Dec 2025 – Present</span>
+              </div>
+              <ul class="exp-list">
+                <li>Developed BD strategies to expand partnerships with universities and Web3 organizations.</li>
+                <li>Managed a multi-campus Student Ambassador Program — recruitment, training, and mentoring.</li>
+                <li>Built strategic collaborations with blockchain communities and academic institutions.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Mancer -->
+          <div class="timeline-item">
+            <div class="timeline-dot"
+              style="border-color:var(--mint);box-shadow:0 0 0 4px var(--mint-dim),0 0 14px rgba(130,224,192,0.4)">
+            </div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div>
+                  <div class="exp-company">🌐 Mancer Web3 Career Hub</div>
+                  <div class="exp-role">Community Manager</div>
+                  <div class="exp-location">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Remote
+                  </div>
+                </div>
+                <span class="exp-period">Nov 2025 – Present</span>
+              </div>
+              <ul class="exp-list">
+                <li>Led and scaled a Web3 talent ecosystem through curated discussions and career development programs.
+                </li>
+                <li>Managed daily operations across Discord, ensuring high engagement and structured communication.</li>
+                <li>Collaborated with Web3 startups and hiring partners to align talent pipelines with ecosystem
+                  demands.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tarumanagara Enterprise -->
+          <div class="timeline-item">
+            <div class="timeline-dot"
+              style="border-color:var(--blue);box-shadow:0 0 0 4px var(--blue-dim),0 0 14px var(--blue-glow)"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div>
+                  <div class="exp-company">🏛 Tarumanagara Enterprise</div>
+                  <div class="exp-role">Project Manager (Contract)</div>
+                  <div class="exp-location">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Grogol, West Jakarta
+                  </div>
+                </div>
+                <span class="exp-period">Sep 2025 – Feb 2026</span>
+              </div>
+              <ul class="exp-list">
+                <li>Developed project roadmaps, feature strategies, and execution plans for university digital platform
+                  initiatives.</li>
+                <li>Coordinated cross-functional teams including developers, designers, and academic stakeholders.</li>
+                <li>Managed timelines, budgeting, and resource allocation to ensure on-time, high-quality delivery.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Tribez CEO -->
+          <div class="timeline-item">
+            <div class="timeline-dot"
+              style="border-color:var(--yellow);box-shadow:0 0 0 4px var(--yellow-dim),0 0 14px var(--yellow-glow)">
+            </div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div>
+                  <div class="exp-company">🚀 Tribez</div>
+                  <div class="exp-role">Co-Founder & Chief Executive Officer</div>
+                  <div class="exp-location">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Grogol, West Jakarta
+                  </div>
+                </div>
+                <span class="exp-period">Sep 2024 – Oct 2025</span>
+              </div>
+              <ul class="exp-list">
+                <li>Led development of MSME solutions: business management systems, marketing automation, and analytics
+                  platforms.</li>
+                <li>Directed product strategy in collaboration with engineering and design teams to deliver scalable
+                  solutions.</li>
+                <li>Built strategic partnerships with stakeholders, investors, and ecosystem partners.</li>
+                <li>Designed AI-driven automation systems to enhance operational efficiency for digital businesses.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Gandarichi -->
+          <div class="timeline-item">
+            <div class="timeline-dot" style="border-color:#ccc;box-shadow:none"></div>
+            <div class="exp-card">
+              <div class="exp-header">
+                <div>
+                  <div class="exp-company" style="color:var(--text-soft)">🍽 Gandarichi</div>
+                  <div class="exp-role">Operational Manager</div>
+                  <div class="exp-location">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Gandaria, South Jakarta
+                  </div>
+                </div>
+                <span class="exp-period">Apr 2022 – May 2024</span>
+              </div>
+              <ul class="exp-list">
+                <li>Managed end-to-end restaurant operations ensuring food quality, hygiene, and customer service
+                  excellence.</li>
+                <li>Oversaw inventory management, supplier coordination, and cost optimization.</li>
+                <li>Recruited, trained, and supervised operational teams to maintain high performance.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div><!-- /timeline -->
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════
+     SKILLS
+══════════════════════════════ -->
+    <section id="skills" aria-label="Skills">
+      <div class="section-header">
+        <div class="section-label">✦ 03 — SKILLS</div>
+        <h2 class="section-title">Technical <span class="accent">Arsenal</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-cat-title">⚡ Soft Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Strategic Thinking</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Time Management</span>
+            <span class="skill-tag">Cross-Functional Teams</span>
+            <span class="skill-tag">Entrepreneurial Mindset</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title" style="color:var(--yellow);">🔧 Hard Skills</div>
+          <div class="skill-tags">
+            <span class="skill-tag yellow">AI & Web3 Product Dev</span>
+            <span class="skill-tag yellow">Business Strategy</span>
+            <span class="skill-tag yellow">Blockchain Solutions</span>
+            <span class="skill-tag yellow">Stakeholder Relations</span>
+            <span class="skill-tag yellow">Financial Planning</span>
+            <span class="skill-tag yellow">Operations Management</span>
+            <span class="skill-tag yellow">Supply Chain</span>
+            <span class="skill-tag yellow">Market Expansion</span>
+            <span class="skill-tag yellow">Customer Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     AWARDS & COMPETITIONS
+══════════════════════════════ -->
+    <div class="awards-bg">
+      <section id="awards" aria-label="Awards">
+        <div class="section-header">
+          <div class="section-label">✦ 04 — COMPETITIONS</div>
+          <h2 class="section-title">Awards &amp; <span class="accent">Recognition</span></h2>
+          <div class="section-divider"></div>
+          <p class="section-sub">From national hackathons to global podiums — competing at the frontier.</p>
+        </div>
+
+        <div class="awards-grid">
+
+          <div class="award-card">
+            <div class="award-top-stripe"></div>
+            <span class="award-icon">🌏</span>
+            <div class="award-level">International · Global</div>
+            <div class="award-title">Global Startup Hackathon</div>
+            <div class="award-result">🥇 1st National · 🥈 2nd Global Winner</div>
+            <div class="award-desc">Global bootcamp by Tarumanagara University &amp; Ngee Ann Polytechnic Singapore.
+              Competed with teams from India, China, Thailand, Vietnam &amp; USA.</div>
+            <div class="award-date">📅 5 – 8 March 2025</div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-top-stripe"
+              style="background:linear-gradient(90deg,var(--blue),var(--lavender),var(--pink))"></div>
+            <span class="award-icon">🎓</span>
+            <div class="award-level">International · NUS Singapore</div>
+            <div class="award-title">Startup Ecosystem Exposure – NUS</div>
+            <div class="award-result">🏆 Best Problem Statement (Fintech)</div>
+            <div class="award-desc">International startup immersion with ITB, UI &amp; UGM. Company visits, panel
+              discussions &amp; business pitching.</div>
+            <div class="award-date">📅 5 – 12 January 2025</div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-top-stripe" style="background:linear-gradient(90deg,var(--blue),var(--mint))"></div>
+            <span class="award-icon">⛓</span>
+            <div class="award-level">National · OJK EKRAF</div>
+            <div class="award-title">Infinity Hackathon – Web3</div>
+            <div class="award-result">🏅 Top 10 National Finalist – Web3</div>
+            <div class="award-desc">Blockchain-based crowdfunding for artists with NFT badges as proof of support — a
+              decentralized creator economy model.</div>
+            <div class="award-date">📅 National Level</div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-top-stripe" style="background:linear-gradient(90deg,var(--mint),var(--blue))"></div>
+            <span class="award-icon">📊</span>
+            <div class="award-level">National · Tarumanagara Enterprise</div>
+            <div class="award-title">The Venturist Programme</div>
+            <div class="award-result">🚀 Best Pitch &amp; Best Startup Award</div>
+            <div class="award-desc">Top 4 startups in a 2-month incubation program. Secured direct investment following
+              Demo Day.</div>
+            <div class="award-date">📅 6 Feb – 21 May 2025</div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-top-stripe" style="background:linear-gradient(90deg,var(--yellow),var(--pink))"></div>
+            <span class="award-icon">🎤</span>
+            <div class="award-level">Internal · Tarumanagara Enterprise</div>
+            <div class="award-title">CEO Bootcamp 3.0</div>
+            <div class="award-result">🏆 Best Pitch Award – 1st Place</div>
+            <div class="award-desc">Won 1st place in business plan competition with recognition for strategic clarity
+              and presentation excellence.</div>
+            <div class="award-date">📅 19 – 21 November 2025</div>
+          </div>
+
+          <div class="award-card">
+            <div class="award-top-stripe" style="background:linear-gradient(90deg,var(--lavender),var(--blue))"></div>
+            <span class="award-icon">🔭</span>
+            <div class="award-level">National · Science Olympiad</div>
+            <div class="award-title">National Astronomy &amp; Astrophysics Olympiad</div>
+            <div class="award-result">🥈 Silver – Yapresindo &nbsp;·&nbsp; 🥉 Bronze – POSI</div>
+            <div class="award-desc">Double medalist in national astronomy &amp; astrophysics academic competitions —
+              demonstrating STEM excellence.</div>
+            <div class="award-date">📅 Dec 2020 &amp; Beyond</div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ══════════════════════════════
+     EDUCATION
+══════════════════════════════ -->
+    <section id="education" aria-label="Education">
+      <div class="section-header">
+        <div class="section-label">✦ 05 — EDUCATION</div>
+        <h2 class="section-title">Academic <span class="accent-blue">Background</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="edu-card">
+        <div>
+          <div class="edu-school">Tarumanagara University</div>
+          <div class="edu-degree">Bachelor of Information Technology – Artificial Intelligence</div>
+          <div class="edu-detail">
+            <span class="edu-chip">📅 Aug 2024 – Present</span>
+            <span class="edu-chip">📍 Grogol, West Jakarta</span>
+          </div>
+          <div class="edu-highlight">
+            Completed full-stack web and mobile development projects integrating <strong>Artificial
+              Intelligence</strong> and <strong>Blockchain</strong> technology.
+            Currently developing undergraduate research on <strong>Intelligent NFT (iNFT)</strong> — exploring the
+            intersection of AI-driven systems and decentralized blockchain infrastructure.
+          </div>
+        </div>
+        <div class="edu-gpa">
+          <div class="edu-gpa-ring">
+            <span class="edu-gpa-num">3.5</span>
+            <span class="edu-gpa-label">GPA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div style="margin-top:60px">
+        <div class="section-header" style="margin-bottom:28px">
+          <div class="section-label">✦ 05.1 — CERTS</div>
+          <h3 class="section-title" style="font-size:1.65rem">Certifications</h3>
+          <div class="section-divider"></div>
+        </div>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">📋</div>
+            <div>
+              <div class="cert-name">Certified Project Management Associate</div>
+              <div class="cert-issuer">Dicoding Indonesia</div>
+              <div class="cert-valid">Valid: Aug 2024 – Aug 2027</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">🤖</div>
+            <div>
+              <div class="cert-name">Certified Artificial Intelligence Program</div>
+              <div class="cert-issuer">Dicoding Indonesia</div>
+              <div class="cert-valid">Valid: Sep 2024 – Sep 2027</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">📊</div>
+            <div>
+              <div class="cert-name">Certified Data Science Basic Program</div>
+              <div class="cert-issuer">Dicoding Indonesia</div>
+              <div class="cert-valid">Valid: Sep 2024 – Sep 2027</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div style="margin-top:60px">
+        <div class="section-header" style="margin-bottom:28px">
+          <div class="section-label">✦ 05.2 — LANGUAGES</div>
+          <h3 class="section-title" style="font-size:1.65rem">Languages</h3>
+          <div class="section-divider"></div>
+        </div>
+        <div class="lang-grid">
+          <div class="lang-card">
+            <span class="lang-flag">🇮🇩</span>
+            <div class="lang-name">Bahasa Indonesia</div>
+            <div class="lang-level">Native</div>
+          </div>
+          <div class="lang-card">
+            <span class="lang-flag">🇬🇧</span>
+            <div class="lang-name">English</div>
+            <div class="lang-level">C1 – Advanced</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+    <div class="contact-section" id="contact" aria-label="Contact">
+      <div class="contact-blob"></div>
+      <div class="contact-inner">
+        <div class="contact-pre">// LET'S BUILD TOGETHER ✦</div>
+        <h2 class="contact-title">Ready to <span>Connect?</span></h2>
+        <p class="contact-sub">
+          Whether you're building in Web3, need a community strategist, or want to explore
+          AI product opportunities — let's talk!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:abrahamrustydj@gmail.com" class="contact-link primary-link">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            abrahamrustydj@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/abraham-rusty-djajani" target="_blank" rel="noopener" class="contact-link">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="#hero" class="contact-link">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            Jakarta, Indonesia
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+    <footer>
+      <p class="footer-text">
+        &copy; 2025 <a href="#hero">Abraham Rusty Djajani</a> &nbsp;·&nbsp;
+        Crafted with <span class="heart">♥</span> and Web3 energy &nbsp;·&nbsp;
+        <a href="mailto:abrahamrustydj@gmail.com">abrahamrustydj@gmail.com</a>
+      </p>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
